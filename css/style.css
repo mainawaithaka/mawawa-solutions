@@ -225,6 +225,12 @@ section{ padding: 80px 0; }
 .material-card .seller{ font-size:0.78rem; color:#767a6b; margin-bottom:10px; }
 .material-card .price{ font-family: var(--font-mono); color: var(--green-dark); font-weight:700; font-size:1.02rem; }
 .material-card .stock{ font-size:0.72rem; color: var(--gold); font-family: var(--font-mono); margin-top:4px; }
+.material-card .buy-btn{
+  display:block; text-align:center; background: var(--green); color: var(--white);
+  padding:10px; border-radius: var(--radius); font-weight:700; font-size:0.85rem;
+  margin-top:16px; transition: background .15s ease;
+}
+.material-card .buy-btn:hover{ background: var(--green-dark); }
 
 /* =============== SUBSCRIBE / JOIN =============== */
 .join{ background: var(--green-dark); position:relative; }
