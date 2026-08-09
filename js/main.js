@@ -15,8 +15,14 @@ function setMode(mode){
     : 'e.g. Cement, timber, ballast...';
 }
 
-tabFundi.addEventListener('click', () => setMode('fundi'));
-tabMaterials.addEventListener('click', () => setMode('materials'));
+tabFundi.addEventListener('click', () => {
+  setMode('fundi');
+  document.querySelector('#fundis').scrollIntoView({ behavior: 'smooth' });
+});
+tabMaterials.addEventListener('click', () => {
+  setMode('materials');
+  document.querySelector('#materials').scrollIntoView({ behavior: 'smooth' });
+});
 
 // MVP: search just scrolls to the relevant section.
 // Replace this with a real API call once a backend is connected.
