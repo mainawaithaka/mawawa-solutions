@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alice Wanjiru — Electrician | Mawawa Solutions</title>
+<link rel="icon" href="../images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand">
+      <img src="../images/logo.png" alt="Mawawa Solutions logo">
+      <span class="brand-name">MAWAWA <span>SOLUTIONS</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="../index.html#fundis">Find a Fundi</a>
+      <a href="../index.html#materials">Materials</a>
+      <a href="../index.html#how">How it works</a>
+      <a href="../index.html#join">For Fundis</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/254757716041?text=Hi%2C%20I%27d%20like%20to%20join%20Mawawa%20Solutions%20as%20a%20fundi" target="_blank" rel="noopener" class="nav-cta">Join as a Fundi</a>
+  </div>
+</header>
+
+<section class="profile-hero">
+  <div class="wrap">
+    <div class="profile-avatar-lg">AW</div>
+    <div>
+      <h1>Alice Wanjiru</h1>
+      <p class="trade-line">Electrician</p>
+      <div class="meta-row">
+        <span>📍 Ongata Line</span>
+        <span class="mono">4.9 ★ (51 reviews)</span>
+        <span>✓ Verified fundi</span>
+      </div>
+    </div>
+    <div class="profile-actions">
+      <a class="contact" style="padding:12px 22px;" href="tel:+254700000000">Call Alice</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <a class="back-link" href="../index.html#fundis">← Back to all fundis</a>
+    <div class="section-head">
+      <span class="eyebrow">About</span>
+      <h2>Reliable electrical work around Ongata Line</h2>
+    </div>
+    <div class="about-block">
+      <p>Alice has handled residential and small commercial wiring, meter installations, and fault repairs around Ongata Line for several years. Known for careful, code-compliant work and clear explanations of what needs fixing.</p>
+      <p>Specialties: house wiring, meter installation, fault-finding, solar backup setup.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blueprint on-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Previous work</span>
+      <h2>Photos from past jobs</h2>
+      <p>Placeholder gallery — once fundis can log in, they'll upload real photos of completed jobs here.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><span class="ph-icon">🔌</span>House wiring</div>
+      <div class="gallery-item"><span class="ph-icon">⚡</span>Meter installation</div>
+      <div class="gallery-item"><span class="ph-icon">🧰</span>Fault repair</div>
+      <div class="gallery-item"><span class="ph-icon">💡</span>Lighting install</div>
+      <div class="gallery-item"><span class="ph-icon">🔋</span>Solar backup setup</div>
+      <div class="gallery-item"><span class="ph-icon">🏠</span>Full house rewiring</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>What customers say</h2>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"Rewired our whole house safely and explained every step."</p>
+      <div class="who">— Kimuka resident</div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"Fixed a tricky fault others couldn't find. Excellent!"</p>
+      <div class="who">— Ongata Line customer</div>
+    </div>
+
+    <div class="review-form">
+      <h3>Leave a review for Alice</h3>
+      <p class="hint">Rate your experience and share a few words to help other customers.</p>
+      <form id="review-form">
+        <div class="star-picker" id="star-picker">
+          <button type="button" data-star="1">★</button>
+          <button type="button" data-star="2">★</button>
+          <button type="button" data-star="3">★</button>
+          <button type="button" data-star="4">★</button>
+          <button type="button" data-star="5">★</button>
+        </div>
+        <input type="text" id="reviewer-name" placeholder="Your name" required>
+        <textarea id="reviewer-text" placeholder="How was the job?" required></textarea>
+        <button type="submit" class="btn-gold">Submit review</button>
+      </form>
+      <p class="note">Reviews submitted here show up on this page for you to see right away. Once fundi accounts go live, all reviews will be saved permanently.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const starButtons = document.querySelectorAll('#star-picker button');
+  let selectedRating = 0;
+  starButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      selectedRating = parseInt(btn.dataset.star);
+      starButtons.forEach(b => b.classList.toggle('filled', parseInt(b.dataset.star) <= selectedRating));
+    });
+  });
+
+  document.getElementById('review-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('reviewer-name').value.trim();
+    const text = document.getElementById('reviewer-text').value.trim();
+    if (!selectedRating) { alert('Please select a star rating.'); return; }
+    if (!name || !text) return;
+
+    const card = document.createElement('div');
+    card.className = 'review-card';
+    card.innerHTML = `
+      <div class="stars">${'★'.repeat(selectedRating)}${'☆'.repeat(5 - selectedRating)}</div>
+      <p>"${text.replace(/</g,'&lt;')}"</p>
+      <div class="who">— ${name.replace(/</g,'&lt;')}</div>
+    `;
+    document.querySelector('.review-form').insertAdjacentElement('beforebegin', card);
+
+    e.target.reset();
+    selectedRating = 0;
+    starButtons.forEach(b => b.classList.remove('filled'));
+  });
+</script>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand">
+      <img src="../images/logo.png" alt="Mawawa Solutions logo">
+      <p>Building better spaces. Connecting people.</p>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Mawawa Solutions. All rights reserved.</span>
+    <span>Kimuka, Kajiado County, Kenya</span>
+  </div>
+</footer>
+
+</body>
+</html>
