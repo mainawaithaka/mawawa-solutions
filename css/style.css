@@ -139,8 +139,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .hero-stats span{ font-size:0.78rem; color: rgba(250,250,247,0.6); }
 
 .hero-art{
-  border:none; border-radius: var(--radius); padding: 28px;
-  background: var(--black);
+  border:1px solid var(--line); border-radius: var(--radius); padding: 28px;
+  background: var(--charcoal);
   display:flex; align-items:center; justify-content:center;
 }
 .hero-art img{ width: 220px; }
