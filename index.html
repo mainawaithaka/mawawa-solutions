@@ -395,5 +395,56 @@
     });
   })();
 </script>
+<script>
+  (function() {
+    var searchForm = document.querySelector('.search-box');
+    var searchInput = document.getElementById('search-input');
+    if (!searchForm || !searchInput) return;
+
+    var fundiCards = Array.prototype.slice.call(document.querySelectorAll('#fundis .fundi-card'));
+    var materialCards = Array.prototype.slice.call(document.querySelectorAll('#materials .material-card'));
+
+    function cardText(card) {
+      return card.textContent.toLowerCase();
+    }
+
+    function runSearch(query) {
+      query = query.trim().toLowerCase();
+
+      var fundiMatches = 0;
+      fundiCards.forEach(function(card) {
+        var match = !query || cardText(card).indexOf(query) !== -1;
+        card.style.display = match ? '' : 'none';
+        if (match) fundiMatches++;
+      });
+
+      var materialMatches = 0;
+      materialCards.forEach(function(card) {
+        var match = !query || cardText(card).indexOf(query) !== -1;
+        card.style.display = match ? '' : 'none';
+        if (match) materialMatches++;
+      });
+
+      if (!query) return;
+
+      if (fundiMatches > 0 && materialMatches === 0) {
+        document.getElementById('fundis').scrollIntoView({ behavior: 'smooth' });
+      } else if (materialMatches > 0 && fundiMatches === 0) {
+        document.getElementById('materials').scrollIntoView({ behavior: 'smooth' });
+      } else if (fundiMatches > 0) {
+        document.getElementById('fundis').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    searchForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      runSearch(searchInput.value);
+    });
+
+    searchInput.addEventListener('input', function() {
+      runSearch(searchInput.value);
+    });
+  })();
+</script>
 </body>
 </html>
