@@ -65,12 +65,12 @@
       <h2>Every trade you need for your build</h2>
     </div>
     <div class="trades">
-      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">Plumbing</span><span class="count">32 fundis</span></span></a>
-      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">Electrical</span><span class="count">28 fundis</span></span></a>
-      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">Masonry</span><span class="count">24 fundis</span></span></a>
-      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">General Contracting</span><span class="count">18 fundis</span></span></a>
-      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">Carpentry</span><span class="count">15 fundis</span></span></a>
-      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">Painting</span><span class="count">11 fundis</span></span></a>
+      <a class="trade-badge" data-category="Plumbing" href="#fundis"><span class="dot"></span><span><span class="name">Plumbing</span><span class="count">32 fundis</span></span></a>
+      <a class="trade-badge" data-category="Electrical" href="#fundis"><span class="dot"></span><span><span class="name">Electrical</span><span class="count">28 fundis</span></span></a>
+      <a class="trade-badge" data-category="Masonry" href="#fundis"><span class="dot"></span><span><span class="name">Masonry</span><span class="count">24 fundis</span></span></a>
+      <a class="trade-badge" data-category="General Contracting" href="#fundis"><span class="dot"></span><span><span class="name">General Contracting</span><span class="count">18 fundis</span></span></a>
+      <a class="trade-badge" data-category="Carpentry" href="#fundis"><span class="dot"></span><span><span class="name">Carpentry</span><span class="count">15 fundis</span></span></a>
+      <a class="trade-badge" data-category="Painting" href="#fundis"><span class="dot"></span><span><span class="name">Painting</span><span class="count">11 fundis</span></span></a>
     </div>
   </div>
 </section>
@@ -368,5 +368,32 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+  (function() {
+    var tradeToCategory = {
+      'Plumber': 'Plumbing',
+      'Electrician': 'Electrical',
+      'Mason': 'Masonry',
+      'General Contractor': 'General Contracting',
+      'Carpenter': 'Carpentry',
+      'Painter': 'Painting'
+    };
+    var counts = {};
+    document.querySelectorAll('.fundi-card .trade').forEach(function(el) {
+      var trade = el.textContent.trim();
+      var category = tradeToCategory[trade] || trade;
+      counts[category] = (counts[category] || 0) + 1;
+    });
+    document.querySelectorAll('.trade-badge').forEach(function(badge) {
+      var category = badge.getAttribute('data-category');
+      if (!category) return;
+      var count = counts[category] || 0;
+      var countEl = badge.querySelector('.count');
+      if (countEl) {
+        countEl.textContent = count + (count === 1 ? ' fundi' : ' fundis') + ' \u00B7 growing';
+      }
+    });
+  })();
+</script>
 </body>
 </html>
