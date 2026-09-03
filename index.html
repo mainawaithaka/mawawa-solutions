@@ -3,155 +3,362 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alice Wanjiru — Electrician | Mawawa Solutions</title>
-<link rel="icon" href="../images/logo.png">
+<title>Mawawa Solutions | Find Fundis & Building Materials in Kimuka</title>
+<meta name="description" content="Mawawa Solutions connects Kimuka and surrounding areas with verified plumbers, electricians, masons and contractors — and a marketplace to buy building materials directly from them.">
+<link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
-    <a href="../index.html" class="brand">
-      <img src="../images/logo.png" alt="Mawawa Solutions logo">
+    <a href="#" class="brand">
+      <img src="images/logo.png" alt="Mawawa Solutions logo">
       <span class="brand-name">MAWAWA <span>SOLUTIONS</span></span>
     </a>
     <nav class="nav-links">
-      <a href="../index.html#fundis">Find a Fundi</a>
-      <a href="../index.html#materials">Materials</a>
-      <a href="../index.html#how">How it works</a>
-      <a href="../index.html#join">For Fundis</a>
-      <a href="../index.html#contact">Contact</a>
+      <a href="#fundis">Find a Fundi</a>
+      <a href="#materials">Materials</a>
+      <a href="#join">For Fundis</a>
+      <a href="#contact">Contact</a>
     </nav>
     <a href="https://wa.me/254757716041?text=Hi%2C%20I%27d%20like%20to%20join%20Mawawa%20Solutions%20as%20a%20fundi" target="_blank" rel="noopener" class="nav-cta">Join as a Fundi</a>
   </div>
 </header>
 
-<section class="profile-hero">
+<!-- HERO -->
+<section class="hero blueprint">
   <div class="wrap">
-    <div class="profile-avatar-lg">AW</div>
     <div>
-      <h1>Alice Wanjiru</h1>
-      <p class="trade-line">Electrician</p>
-      <div class="meta-row">
-        <span>📍 Ongata Line</span>
-        <span class="mono">4.9 ★ (51 reviews)</span>
-        <span>✓ Verified fundi</span>
+      <span class="eyebrow">Serving Kimuka &amp; environs</span>
+      <h1>Hire trusted fundis. <em>Buy materials.</em> One platform.</h1>
+      <p class="lead">Mawawa Solutions connects you to verified plumbers, electricians, masons and contractors around Kimuka — and lets you buy building materials straight from them.</p>
+
+      <div class="finder" role="tablist" aria-label="Search type">
+        <button class="active" id="tab-fundi" role="tab" aria-selected="true">Find a fundi</button>
+        <button id="tab-materials" role="tab" aria-selected="false">Buy materials</button>
+      </div>
+      <form class="search-box" role="search">
+        <input id="search-input" type="text" placeholder="e.g. Plumber near Kimuka centre" aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="hero-stats">
+        <div><strong>120+</strong><span>Verified fundis</span></div>
+        <div><strong>40+</strong><span>Materials</span></div>
+        <div><strong>Kimuka</strong><span>& surrounding areas</span></div>
       </div>
     </div>
-    <div class="profile-actions">
-      <a class="contact" style="padding:12px 22px;" href="tel:+254700000000">Call Alice</a>
+    <div class="hero-art">
+      <img src="images/logo.png" alt="">
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <a class="back-link" href="../index.html#fundis">← Back to all fundis</a>
-    <div class="section-head">
-      <span class="eyebrow">About</span>
-      <h2>Reliable electrical work around Ongata Line</h2>
-    </div>
-    <div class="about-block">
-      <p>Alice has handled residential and small commercial wiring, meter installations, and fault repairs around Ongata Line for several years. Known for careful, code-compliant work and clear explanations of what needs fixing.</p>
-      <p>Specialties: house wiring, meter installation, fault-finding, solar backup setup.</p>
-    </div>
-  </div>
-</section>
-
+<!-- TRADES -->
 <section class="blueprint on-dark">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Previous work</span>
-      <h2>Photos from past jobs</h2>
-      <p>Placeholder gallery — once fundis can log in, they'll upload real photos of completed jobs here.</p>
+      <span class="eyebrow">Browse by trade</span>
+      <h2>Every trade you need for your build</h2>
     </div>
-    <div class="gallery-grid">
-      <img src="../images/alice-staircase-install.jpg" alt="Staircase railing installation" class="gallery-photo">
-      <div class="gallery-item"><span class="ph-icon">⚡</span>Meter installation</div>
-      <div class="gallery-item"><span class="ph-icon">🧰</span>Fault repair</div>
-      <img src="../images/alice-lighting-install.jpg" alt="Ceiling lighting point installation by Alice Wanjiru" class="gallery-photo">
-      <div class="gallery-item"><span class="ph-icon">🔋</span>Solar backup setup</div>
-      <div class="gallery-item"><span class="ph-icon">🏠</span>Full house rewiring</div>
+    <div class="trades">
+      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">Plumbing</span><span class="count">32 fundis</span></span></a>
+      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">Electrical</span><span class="count">28 fundis</span></span></a>
+      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">Masonry</span><span class="count">24 fundis</span></span></a>
+      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">General Contracting</span><span class="count">18 fundis</span></span></a>
+      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">Carpentry</span><span class="count">15 fundis</span></span></a>
+      <a class="trade-badge" href="#fundis"><span class="dot"></span><span><span class="name">Painting</span><span class="count">11 fundis</span></span></a>
     </div>
   </div>
 </section>
 
-<section>
+<!-- FUNDI DIRECTORY PREVIEW -->
+<section id="fundis">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Reviews</span>
-      <h2>What customers say</h2>
+      <span class="eyebrow">Find a fundi</span>
+      <h2>Recently active near Kimuka</h2>
+      <p>A preview of the fundi directory. Every profile shown here is placeholder data — connect a database to make it live.</p>
     </div>
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
-      <p>"Rewired our whole house safely and explained every step."</p>
-      <div class="who">— Kimuka resident</div>
-    </div>
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
-      <p>"Fixed a tricky fault others couldn't find. Excellent!"</p>
-      <div class="who">— Ongata Line customer</div>
-    </div>
-
-    <div class="review-form">
-      <h3>Leave a review for Alice</h3>
-      <p class="hint">Rate your experience and share a few words to help other customers.</p>
-      <form id="review-form">
-        <div class="star-picker" id="star-picker">
-          <button type="button" data-star="1">★</button>
-          <button type="button" data-star="2">★</button>
-          <button type="button" data-star="3">★</button>
-          <button type="button" data-star="4">★</button>
-          <button type="button" data-star="5">★</button>
+    <div class="grid-3">
+      <div class="fundi-card">
+        <a href="fundis/john-mwangi.html" class="fundi-top" style="text-decoration:none;color:inherit;">
+          <div class="fundi-avatar">JM</div>
+          <div><h3>John Mwangi</h3><span class="trade">Plumber</span></div>
+        </a>
+        <div class="fundi-body">
+          <span class="badge-verified">Verified</span>
+          <div class="meta"><span>Kimuka Centre</span><span class="mono">4.8 ★ (34)</span></div>
+          <a class="contact" href="tel:+254700000000">Call fundi</a>
         </div>
-        <input type="text" id="reviewer-name" placeholder="Your name" required>
-        <textarea id="reviewer-text" placeholder="How was the job?" required></textarea>
-        <button type="submit" class="btn-gold">Submit review</button>
-      </form>
-      <p class="note">Reviews submitted here show up on this page for you to see right away. Once fundi accounts go live, all reviews will be saved permanently.</p>
+      </div>
+      <div class="fundi-card">
+        <a href="fundis/alice-wanjiru.html" class="fundi-top" style="text-decoration:none;color:inherit;">
+          <div class="fundi-avatar">AW</div>
+          <div><h3>Alice Wanjiru</h3><span class="trade">Electrician</span></div>
+        </a>
+        <div class="fundi-body">
+          <span class="badge-verified">Verified</span>
+          <div class="meta"><span>Ongata Line</span><span class="mono">4.9 ★ (51)</span></div>
+          <a class="contact" href="tel:+254700000000">Call fundi</a>
+        </div>
+      </div>
+      <div class="fundi-card">
+        <a href="fundis/peter-kamau.html" class="fundi-top" style="text-decoration:none;color:inherit;">
+          <div class="fundi-avatar">PK</div>
+          <div><h3>Peter Kamau</h3><span class="trade">Mason</span></div>
+        </a>
+        <div class="fundi-body">
+          <span class="badge-verified">Verified</span>
+          <div class="meta"><span>Kimuka - Isinya Rd</span><span class="mono">4.7 ★ (22)</span></div>
+          <a class="contact" href="tel:+254700000000">Call fundi</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<script>
-  const starButtons = document.querySelectorAll('#star-picker button');
-  let selectedRating = 0;
-  starButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      selectedRating = parseInt(btn.dataset.star);
-      starButtons.forEach(b => b.classList.toggle('filled', parseInt(b.dataset.star) <= selectedRating));
-    });
-  });
+<!-- MATERIALS PREVIEW -->
+<section id="materials" class="blueprint on-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Materials marketplace</span>
+      <h2>Buy materials</h2>
+      <p>Sample listings below — fundis will manage their own stock and prices once the platform is connected to a database.</p>
+    </div>
+    <div class="materials-grid">
+      <div class="material-card">
+        <img src="images/cement.jpg" alt="Stacked bags of cement" class="material-photo">
+        <h3>Cement (50kg)</h3>
+        <p class="price">KSh 820 / piece</p>
+        <p class="stock">In stock — 40 bags</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Cement%20(50kg)" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/timber.jpg" alt="Stacked timber planks" class="material-photo">
+        <h3>Timber (3x2, per pc)</h3>
+        <p class="price">Cyprus: KSh 35 · Pine: KSh 31</p>
+        <p class="stock">In stock — 200 pcs</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Timber%20(3x2)" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/timber-2x2.jpg" alt="Stacked 2x2 timber planks" class="material-photo">
+        <h3>Timber (2x2, per ft)</h3>
+        <p class="price">Cyprus: KSh 25/ft · Pine: KSh 20/ft</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Timber%20(2x2)" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/ballast.jpg" alt="Pile of ballast gravel" class="material-photo">
+        <h3>Ballast</h3>
+        <p class="price">KSh 1,500/tonne · KSh 200/wheelbarrow</p>
+        <p class="stock">Delivery available</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Ballast" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <div class="icon">🔌</div>
+        <h3>Electrical cable (100m)</h3>
+        <p class="price">KSh 4,500</p>
+        <p class="stock">In stock — 12 rolls</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Electrical%20cable%20(100m)" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/chain-link.jpg" alt="Rolls of chain link fencing" class="material-photo">
+        <h3>Chain Link Fence</h3>
+        <p class="price">14G: KSh 750/ft · 16G: KSh 550/ft</p>
+        <p class="stock">Sizes available: 4ft – 8ft</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Chain%20Link%20Fence" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/ceiling-board.jpg" alt="Flowered ceiling board" class="material-photo">
+        <h3>Ceiling Board (Flowered)</h3>
+        <p class="price">KSh 1,200</p>
+        <p class="stock">7mm & 9mm · Flowered / plain available</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Ceiling%20Board%20(Flowered)" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/polythene.jpg" alt="Rolls of polythene sheeting" class="material-photo">
+        <h3>Polythene</h3>
+        <p class="price">20kg: KSh 3,000 · 15kg: KSh 2,500 · 10kg: KSh 1,500</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Polythene" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/marine-board.jpg" alt="Stacked marine boards" class="material-photo">
+        <h3>Marine Board</h3>
+        <p class="price">KSh 2,600</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Marine%20Board" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/plywood-3mm.jpg" alt="Stacked sheets of 3mm plywood" class="material-photo">
+        <h3>Plywood (3mm)</h3>
+        <p class="price">KSh 500</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Plywood%20(3mm)" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/plywood-6mm.jpg" alt="Stacked sheets of 6mm plywood" class="material-photo">
+        <h3>Plywood (6mm)</h3>
+        <p class="price">KSh 1,200</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Plywood%20(6mm)" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/spray-paint.jpg" alt="Assorted spray paint cans" class="material-photo">
+        <h3>Spray Paint (Can)</h3>
+        <p class="price">KSh 300</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Spray%20Paint" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/dalugo-6.jpg" alt="Stacked Dalugo 6 building blocks" class="material-photo">
+        <h3>Dalugo 6</h3>
+        <p class="price">KSh 60 / piece</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Dalugo%206" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/foundation-6.jpg" alt="Foundation stone" class="material-photo">
+        <h3>Foundation 6</h3>
+        <p class="price">KSh 50 / foot</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Foundation%206" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/machine-cut-6.jpg" alt="Stacked machine cut blocks" class="material-photo">
+        <h3>Machine Cut 6</h3>
+        <p class="price">KSh 45 / piece</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Machine%20Cut%206" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/machine-cut-4.jpg" alt="Stacked machine cut blocks" class="material-photo">
+        <h3>Machine Cut 4</h3>
+        <p class="price">KSh 45 / piece</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Machine%20Cut%204" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/batten-door.jpg" alt="Wooden batten door" class="material-photo">
+        <h3>Batten Door</h3>
+        <p class="price">KSh 2,000</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Batten%20Door" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/flash-door.jpg" alt="Glossy wood-finish flash door" class="material-photo">
+        <h3>Flash Door</h3>
+        <p class="price">KSh 3,400</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Flash%20Door" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/platinum-prime-coat.jpg" alt="Buckets of Platinum Prime Coat paint" class="material-photo">
+        <h3>Platinum Prime Coat (20L)</h3>
+        <p class="price">KSh 4,900</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Platinum%20Prime%20Coat%20(20L)" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/binding-wire.jpg" alt="Roll of binding wire" class="material-photo">
+        <h3>Binding Wire (15kg)</h3>
+        <p class="price">KSh 3,400</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Binding%20Wire%20(15kg)" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/hoop-iron.jpg" alt="Roll of hoop iron" class="material-photo">
+        <h3>Hoop Iron Roll</h3>
+        <p class="price">KSh 1,900</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Hoop%20Iron%20Roll" target="_blank" rel="noopener">Buy</a>
+      </div>
+      <div class="material-card">
+        <img src="images/plastic-mesh.jpg" alt="Rolls of plastic mesh" class="material-photo">
+        <h3>Plastic Mesh</h3>
+        <p class="price">KSh 6,000/roll · KSh 250/metre</p>
+        <a class="buy-btn" href="https://wa.me/254757716041?text=Hi%2C%20I%27m%20interested%20in%20Plastic%20Mesh" target="_blank" rel="noopener">Buy</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  document.getElementById('review-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('reviewer-name').value.trim();
-    const text = document.getElementById('reviewer-text').value.trim();
-    if (!selectedRating) { alert('Please select a star rating.'); return; }
-    if (!name || !text) return;
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="wrap">
+    <div><strong>120+</strong><span>Verified fundis</span></div>
+    <div><strong>40+</strong><span>Materials</span></div>
+    <div><strong>300+</strong><span>Jobs connected</span></div>
+    <div><strong>4.8★</strong><span>Average rating</span></div>
+  </div>
+</section>
 
-    const card = document.createElement('div');
-    card.className = 'review-card';
-    card.innerHTML = `
-      <div class="stars">${'★'.repeat(selectedRating)}${'☆'.repeat(5 - selectedRating)}</div>
-      <p>"${text.replace(/</g,'&lt;')}"</p>
-      <div class="who">— ${name.replace(/</g,'&lt;')}</div>
-    `;
-    document.querySelector('.review-form').insertAdjacentElement('beforebegin', card);
+<!-- JOIN AS FUNDI -->
+<section id="join" class="join">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="color:#F2C94C;border-color:rgba(242,201,76,0.3)">For fundis & suppliers</span>
+      <h2>Get found by customers in Kimuka — and sell your materials too</h2>
+      <p>Subscribe to list your services and open your own materials store on Mawawa Solutions.</p>
+      <ul class="plan-list">
+        <li>Your own profile with verified badge, ratings and reviews</li>
+        <li>List and manage building materials for sale</li>
+        <li>Direct calls and WhatsApp enquiries from customers near you</li>
+        <li>Appear under your trade category and local area search</li>
+      </ul>
+      <a href="https://wa.me/254757716041?text=Hi%2C%20I%27d%20like%20to%20subscribe%20as%20a%20fundi%20on%20Mawawa%20Solutions" target="_blank" rel="noopener" class="btn-gold">Subscribe as a fundi</a>
+    </div>
+    <div class="plan-card">
+      <span class="tag mono">FUNDI MEMBERSHIP</span>
+      <div class="price-row"><strong>KSh 500</strong><span>/ month</span></div>
+      <p style="color:rgba(250,250,247,0.6);font-size:0.85rem;margin-bottom:24px;">Billed monthly via M-Pesa. Cancel anytime.</p>
+      <ul>
+        <li>Public profile & trade badge</li>
+        <li>Unlimited material listings</li>
+        <li>Customer reviews & ratings</li>
+        <li>Priority placement in Kimuka search</li>
+      </ul>
+      <a href="https://wa.me/254757716041?text=Hi%2C%20I%27d%20like%20to%20get%20started%20with%20the%20Fundi%20Membership%20on%20Mawawa%20Solutions" target="_blank" rel="noopener" class="btn-gold" style="width:100%;justify-content:center;">Get started</a>
+    </div>
+  </div>
+</section>
 
-    e.target.reset();
-    selectedRating = 0;
-    starButtons.forEach(b => b.classList.remove('filled'));
-  });
-</script>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div>
+      <div class="section-head">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Questions? Send us a message</h2>
+        <p>Whether you're a customer or a fundi, we're happy to help you get set up.</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Full name" required>
+        <input type="tel" placeholder="Phone number" required>
+        <select>
+          <option>I'm a customer looking for a fundi</option>
+          <option>I'm a customer looking for materials</option>
+          <option>I'm a fundi / supplier wanting to join</option>
+        </select>
+        <textarea placeholder="Tell us what you need..."></textarea>
+        <button type="submit" class="btn-gold">Send message</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <div class="item"><div class="ic">📍</div><div><h4>Location</h4><p>Kimuka &amp; surrounding areas, Kajiado County</p></div></div>
+      <div class="item"><div class="ic">📞</div><div><h4>Phone / WhatsApp</h4><p>0757 716 041</p></div></div>
+      <div class="item"><div class="ic">✉️</div><div><h4>Email</h4><p><a href="mailto:mawawasolutions@gmail.com" style="color:#2563EB;text-decoration:underline;font-style:italic;">mawawasolutions@gmail.com</a></p></div></div>
+      <div class="item"><div class="ic">🕐</div><div><h4>Hours</h4><p>Mon – Sat, 7:00am – 6:00pm<br>Sun, 8:00am – 2:00pm</p></div></div>
+    </div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
     <div class="foot-brand">
-      <img src="../images/logo.png" alt="Mawawa Solutions logo">
-      <p>Building better spaces. Connecting people.</p>
+      <img src="images/logo.png" alt="Mawawa Solutions logo">
+      <p>Building better spaces. Connecting people. A local platform linking Kimuka customers with trusted fundis and building materials.</p>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <ul><li><a href="#fundis">Find a Fundi</a></li><li><a href="#materials">Materials</a></li></ul>
+    </div>
+    <div>
+      <h5>Fundis</h5>
+      <ul><li><a href="#join">Join Mawawa</a></li><li><a href="#join">Membership plan</a></li></ul>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <ul><li><a href="#contact">Contact</a></li></ul>
     </div>
   </div>
   <div class="wrap foot-bottom">
@@ -160,5 +367,6 @@
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
